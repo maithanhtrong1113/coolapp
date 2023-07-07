@@ -10,12 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class CoachRest {
     private Coach coach;
 
+//    @Autowired
+//    public CoachRest(Coach theCoach) {
+//        coach = theCoach;
+//    }
     @Autowired
-    public CoachRest(Coach theCoach){
-        coach= theCoach;
+    public void setCoachRest(Coach theCoach) {
+        coach = theCoach;
     }
-    @GetMapping("/coach")
-    public String CoachEnponit(){
+        @GetMapping("/coach")
+    public String CoachEnponit() {
         return coach.getDailyWork();
     }
 
