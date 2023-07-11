@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class CoachImpl implements Coach {
     @Override
     public String getDailyWork() {
-        return "This is DailyWork !!!!!";
+        return "This is daily work !!!!!";
     }
 }
